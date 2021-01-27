@@ -37,7 +37,7 @@ You can limit the documents by adding a query.
 --------------------------------------------------
 include-tagged::{doc-tests-file}[{api}-request-query]
 --------------------------------------------------
-<1> Only copy documents which have field `user` set to `kimchy`
+<1> Only delete documents which have field `user` set to `kimchy`
 
 It’s also possible to limit the number of processed documents by setting `maxDocs`.
 
@@ -45,7 +45,7 @@ It’s also possible to limit the number of processed documents by setting `maxD
 --------------------------------------------------
 include-tagged::{doc-tests-file}[{api}-request-maxDocs]
 --------------------------------------------------
-<1> Only copy 10 documents
+<1> Only delete 10 documents
 
 By default +{request}+ uses batches of 1000. You can change the batch size
 with `setBatchSize`.
